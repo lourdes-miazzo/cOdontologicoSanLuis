@@ -1,0 +1,135 @@
+.titleContact{
+    margin-top: 2rem;
+    margin-bottom: 1.8rem;
+    color: #c9E6E3
+}
+label{
+    color: #c9E6E3
+}
+
+.backOrg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+.backColor{
+    background-color: #269989;
+    max-width: 100%;
+    width: 100vw;
+    height: 85vh;
+}
+
+.formOrg{
+    background-color: #2f9686;
+    height: 54vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem; 
+    box-shadow: 26px 10px 19px 0px #506567;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.my-button{
+    background-color:  #279081;
+    border-radius: 7px;
+    margin: 0.3rem;
+    margin-top: 0.8rem;
+    color: #c9E6E3;
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+}
+
+
+input{
+    border-radius: 3px;
+    margin: 5px;
+    border: none;
+    color: #c9E6E3;
+    border-bottom: 1px solid #efefef;
+    outline: none;
+    background-color: #2f9686;
+}
+
+.icono{
+    width: 3rem;
+    padding-left: 0.7rem;
+}
+
+.respuesta{
+    background-color: #efefef;
+    color:  #279081;
+    font-size: 2rem;
+}
+
+.locationRegist{
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+}
+
+@media (min-width: 768px){
+    .titleContact{
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+
+    }
+    .backColor{
+        height: 86vh;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .formOrg{
+        height: 45vh;
+        width: 40vw;
+        padding: 3rem; 
+        margin-bottom: 10rem;
+    }
+    
+    .my-button{
+        margin: 0.3rem;
+        margin-top: 0.8rem;
+        padding-bottom: 0.4rem;
+        padding-top: 0.4rem;
+    }
+    
+    .respuesta{
+        font-size: 2rem;
+    }
+
+    .locationRegist{
+        margin-left: auto;
+        margin-right: 0.5rem;
+        margin-bottom: 4rem;
+    }
+    
+}  /* CIERRE MEDIA QUERIE 768 NO BORRAR!   */
+
+
+@media (min-width: 1024px){
+    .backColor{
+        height: 85.2vh;
+    }
+    .titleContact{
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+    }
+    
+    .formOrg{
+        height: 40vh;
+        width: 30vw;
+        padding: 3rem; 
+        margin-bottom: 5rem;
+    }
+    
+    .locationRegist{
+        margin-top: 10rem;
+    }
+}  /* CIERRE MEDIA QUERIE 1024 NO BORRAR!   */
