@@ -2,8 +2,7 @@ import "./registerZone.css"
 import React from 'react'
 import { useAuth } from "../../context/AuthContext"
 import { Link } from "react-router-dom"
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Dropdown from 'react-bootstrap/Dropdown';
+import {DropdownButton, Dropdown} from "react-bootstrap"
 
 const RegisterZone = () => {
     const {user, isAuthenticated, logout}= useAuth()
@@ -20,15 +19,15 @@ const RegisterZone = () => {
                 (
                 <div >
                     <DropdownButton title={<p className="buttonUserP">{user.userName}</p>} id="buttonUser">
-                        <Dropdown.Item  onClick={logoutSession}><p className="buttonP">Cerrar Sesión</p></Dropdown.Item>
+                        <Dropdown.Item  onClick={logoutSession} className="buttonP"><p>Cerrar Sesión</p></Dropdown.Item>
                     </DropdownButton>
                 </div>
                 )
                 :  
                 ( 
                 <div className="right">
-                    <Link to="/api/register/registro" className="noDeco1"><p className="regP">Registro</p></Link>
-                    <Link to="/api/register/login" className="noDeco1"><p className="regP">Login</p></Link>
+                    <button className="buttonRegister"><Link to="/api/register/registro" className="noDeco1"><p className="regP">Registro</p></Link></button>
+                    <button className="buttonRegister"><Link to="/api/register/login" className="noDeco1"><p className="regP">Login</p></Link></button>
                 </div>
                 )
         }

@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'ArialRounded';
+    font-weight: bold;
+    src: url("../../components/fonts/arlrdbd.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'MyriadPro';
+    src: url("../../components/fonts/myriadpro-light.otf") format('opentype');
+}
+
+.titlePos{
+    text-align: center;
+    margin-top: 0.8rem;
+    font-weight: 600;
+    color: rgb(48,48,48);
+    font-family: "ArialRounded", sans-serif;
+}
+.logoIndPos{
+    width: 2rem;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.logosPos{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+.backPos{
+    background-image: linear-gradient(rgba(255,255,255, 0.4),rgba(255,255,255, 0.4)), url("https://firebasestorage.googleapis.com/v0/b/ecommerceart-fb0d5.appspot.com/o/recorte2fondo.jpg?alt=media&token=adf306e1-0c31-4f69-969d-abbc43a675b1");
+    max-width: 100%;
+    width: 100vw;
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.aroundPos{
+    border-radius: 1rem;
+    padding: 1rem;
+    background-image: linear-gradient(rgba(205,174,127,0.4), rgba(205,174,127,0.4));
+    width: 88vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.textPos{
+    font-family: "MyriadPro", sans-serif;
+}
+@media(min-width: 359px){
+
+    .aroundPos{
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    } 
+    .titlePos{
+        font-size: 1.3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media(min-width: 375px){
+    .titlePos{
+        font-size: 1.3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .aroundPos{
+        width: 88vw;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    } 
+}
+
+@media(min-width: 389px){
+
+    .titlePos{
+        font-size: 1.3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .aroundPos{
+
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .logoIndPos{
+        width: 2.5rem;
+
+    }
+    .logosPos{
+        margin-top: 2rem;
+    }
+}
+@media(min-width: 412px){
+
+    .titlePos{
+        font-size: 1.3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .logoIndPos{
+        width: 2.5rem;
+
+    }
+    .logosPos{
+        margin-top: 2rem;
+    }
+}
+@media(min-width: 768px){
+    .backPos{
+        height: 68vh;
+    }
+    .aroundPos{
+        width: 65vw;
+        height: 20vh;
+    }
+
+    .logosPos{
+        margin-top: 4rem;
+    }
+}
+@media(min-width:1024px){
+    .backPosBig{
+        background-image: linear-gradient(rgba(255,255,255, 0.4),rgba(255,255,255, 0.4)), url("https://firebasestorage.googleapis.com/v0/b/ecommerceart-fb0d5.appspot.com/o/paciente-sexo-femenino-que-tiene-procedimiento-realizado-dentista.jpg?alt=media&token=208b83aa-ded3-4393-b0d1-0914e35a74b0");
+        background-size: cover;
+        max-width: 100%;
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .aroundPos{
+        height: 40vh;
+        width: 40vw;
+        padding-top: 1rem;
+    }
+
+    @media(min-width:1024px){
+        .backPosBig{
+  
+            height: 90vh;
+  
+        }
+        .aroundPos{
+            height: 40vh;
+            width: 40vw;
+            padding-top: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .textPos{
+            font-size: 1rem;
+        }
+    }
+}

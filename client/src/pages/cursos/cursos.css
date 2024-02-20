@@ -1,32 +1,245 @@
-.backColor1{
-    background-color: #269989;
-    max-width: 100vw;
+@font-face {
+    font-family: 'ArialRounded';
+    font-weight: bold;
+    src: url("../../components/fonts/arlrdbd.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'MyriadPro';
+    src: url("../../components/fonts/myriadpro-light.otf") format('opentype');
+}
+.titleCour{
+    text-align: center;
+    margin-top: 0.8rem;
+    font-weight: 600;
+    color: rgb(65,65,65);
+    font-family: "ArialRounded", sans-serif;
+}
+
+.backCour{
+    background-image: linear-gradient(rgba(255,255,255, 0.4),rgba(255,255,255, 0.4)), url("https://firebasestorage.googleapis.com/v0/b/ecommerceart-fb0d5.appspot.com/o/recorte2fondo.jpg?alt=media&token=adf306e1-0c31-4f69-969d-abbc43a675b1");
+    max-width: 100%;
     width: 100vw;
-    overflow: hidden;
-    height: 50vh;
+    background-size: cover;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
 }
-.regLocation{
-    margin-bottom: 34rem;
-}
+.aroundCour{
+    border-radius: 1rem;
+    padding: 1rem;
+    background-image: linear-gradient(rgba(205,174,127,0.4), rgba(205,174,127,0.4));
+    width: 88vw;
 
-@media (min-width: 768px){
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.orgCour{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.indTextCour{
+    color: rgb(65,65,65);
+    font-size: 1rem;
+    font-family: "MyriadPro", sans-serif;
+}
+.pointTextCour{
+    font-size: 5rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+    line-height: 0.3;
+    color: rgb(189, 136, 58);
+}
+.logoCourArea{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logoCourWhat{
+    width: 2.5rem;
+    margin-left: 1rem;
     
-    .backColor1{
+}
+.textWhatCour{
+    color: rgb(48,48,48);
+    font-family: "ArialRounded", sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media(min-width: 360px){
+
+
+    .logoCourWhat{
+        margin-left: 1rem;
+        
+    }
+    .titleCour{
+    
+        margin-top: 1.6rem;
+        font-weight: 600;
+    }
+}
+
+
+
+@media(min-width: 390px){
+    .backCour{
+        height: 140vh;
+    }
+    .aroundCour{
+        height: 110vh;
+    }
+    .logoCourWhat{
+        width: 3rem;
+        margin-left: 1rem;
+        
+    }
+    .titleCour{
+    
+        margin-top: 1.6rem;
+        font-weight: 600;
+    }
+}
+@media(min-width: 412px){
+
+    .backCour{
+        height: 125vh;
+    }
+    .aroundCour{
+        height: 100vh;
+    }
+    .logoCourWhat{
+        width: 3rem;
+        margin-left: 1rem;
+        
+    }
+}
+@media(min-width: 540px){
+
+    .backCour{
+        height: 145vh;
+    }
+    .aroundCour{
+        height: 110vh;
+    }
+    .logoCourWhat{
+        width: 3rem;
+        margin-left: 1rem;
+        
+    }
+}
+@media(min-width: 768px){
+
+    .backCour{
+        height: 105vh;
+    }
+    .aroundCour{
+        height: 77vh;
+        width: 75vw;
+    }
+    .logoCourWhat{
+        width: 3rem;
+        margin-left: 1.2rem;
+        
+    }
+}
+
+@media(min-width: 820px){
+
+    .backCour{
+        height: 95vh;
+    }
+    .aroundCour{
+        height: 65vh;
+        width: 75vw;
+    }
+    .logoCourWhat{
+        width: 3rem;
+        margin-left: 1.2rem;
+    }
+}
+
+@media(min-width: 912px){
+
+    .backCour{
+        height: 80vh;
+    }
+    .aroundCour{
+        height: 55vh;
+        width: 70vw;
+        padding: 2rem;
+    }
+    .titleCour{
+        font-size: 1.3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+    .textWhatCour{
+        font-size: 1.3rem;
+    }
+}
+
+@media(min-width: 1024px){
+    .backCourBig{
+        background-image: linear-gradient(rgba(255,255,255, 0.4),rgba(255,255,255, 0.4)), url("https://firebasestorage.googleapis.com/v0/b/ecommerceart-fb0d5.appspot.com/o/paciente-sexo-femenino-que-tiene-procedimiento-realizado-dentista.jpg?alt=media&token=208b83aa-ded3-4393-b0d1-0914e35a74b0");
+        background-size: cover;
+        max-width: 100%;
+        width: 100vw;
+        height: 170vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .aroundCour{
+        height: 115vh;
+        width: 70vw;
+        padding: 2rem;
+    }
+    .logoCourWhat{
+        width: 3.4rem;
+        margin-left: 2rem;
+        
+    }
+    .pointTextCour{
+        line-height: 0.1;
+    }
+}
+
+@media(min-width: 1280px){
+    .backCourBig{
+        height: 125vh;
+    }
+    .aroundCour{
         height: 85vh;
+        width: 55vw;
+        padding: 2rem;
     }
-    .regLocation{
-        margin-bottom: 34rem;
+    .logoCourWhat{
+        width: 3.6rem;
+        margin-left: 2rem;
+        
     }
-
-}  /* CIERRE MEDIA QUERIE 768 NO BORRAR!   */
-
-
-@media (min-width: 1024px){
-
-    .backColor1{
-        height: 85vh;
+    .pointTextCour{
+        line-height: 0.1;
     }
-    .regLocation{
-        margin-bottom: 34rem;
+}
+
+@media(min-width: 1360px){
+    .backCourBig{
+        height: 155vh;
     }
-}  /* CIERRE MEDIA QUERIE 1024 NO BORRAR!   */
+    .aroundCour{
+        height: 105vh;
+        width: 55vw;
+        padding: 2rem;
+    }
+    .logoCourWhat{
+        width: 4rem;
+        margin-left: 1.5rem;
+        
+    }
+}

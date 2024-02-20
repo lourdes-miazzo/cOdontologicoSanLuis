@@ -1,49 +1,31 @@
 import "./home.css"
-import { useState } from "react"
-import { useEffect } from "react"
-import RegisterZone from "../../components/registerZone/RegisterZone.jsx"
 import Footer from "../../components/footer/Footer.jsx"
-import MapCard from "../../components/mapCard/MapCard"
-import { twoNewsRequest } from "../../api/auth"
-
+import Carrousel from "../../components/carrousel/Carrousel.jsx"
+import { Link } from "react-router-dom"
+import logoI from "/images/logoI.png"
+import logoW from "/images/logoW.png"
+import logoF from "/images/logoF.png"
 
 
 const Home = ()=>{
-    
-    const [data, setData]= useState([])
-    
-    useEffect(() => {
-        const fetchData= async()=>{
-            try{
-                const db= await twoNewsRequest()
-                const dbArray= db.payload
-                setData(dbArray)
-                console.log(data)
-            }
-            catch(e){
-                console.log(e)
-            }
-        }
-       fetchData()
-    }, [])
+
     
 
     return(
         <>
             <div className="backColor4">
                 <div className="centerPiece">
-                    <div className="aroundVideo">
-                        <iframe className="video" src="https://www.youtube.com/embed/r7aJA575ni0" title="SOMOS EL CÍRCULO ARGENTINO DE ODONTOLOGÍA" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                        <div className="row-card">
-                        <MapCard data={data}/>
-                        </div>
+                    <div className="aroundSlide">
+                        <Carrousel/>
                     </div>
                     <div className="back-under">
-                        <h4 className="name">Círculo Odontológico de San Luis</h4>
+                        <h4 className="name"><Link to="/api/nosotros" style={{textDecoration:"none", color: "inherit"}}>CÍRCULO ODONTOLÓGICO DE SAN LUIS</Link></h4>
                     </div>
-                </div>
-                <div className="locationReg">
-                    <RegisterZone />
+                    <div className="logosHome">
+                        <Link to="" target='_blank' style={{textDecoration:"none", color: "inherit"}}><img src={logoF} className="logoIndHome"/></Link>
+                        <Link to="https://api.whatsapp.com/send?phone=5492665133187" target='_blank' style={{textDecoration:"none", color: "inherit"}}><img src={logoW} className="logoIndHome"/></Link>
+                        <Link to="https://www.instagram.com/cosl.ep/" target='_blank' style={{textDecoration:"none", color: "inherit"}}><img src={logoI} className="logoIndHome"/></Link>
+                    </div>
                 </div>
             </div>
         <Footer/>

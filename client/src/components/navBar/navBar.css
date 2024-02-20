@@ -1,12 +1,69 @@
-.gral{
-    max-width: 100%;
-    width: 100vw;
-    height: 14.8vh;
-    background-color: aliceblue;
-    display: flex;
-    flex-direction: row-reverse;
+@font-face {
+    font-family: 'ArialRounded';
+    font-weight: bold;
+    src: url("../../components/fonts/arlrdbd.ttf") format('truetype');
 }
-.hvr-fade {
+
+ .logoC{
+    width: 3rem;
+    align-self: center;
+    margin-left: 1.5rem;
+}
+
+ .navBarOrg {
+    padding-top: 10px; /* Ajusta según sea necesario */
+    height: 15vh;
+}
+
+.navbar-toggler {
+    order: -1 !important;  /* Mueve el toggler al inicio en dispositivos pequeños */
+    border: none !important;
+}
+
+
+.logoNavInd {
+    width: 1.5rem;
+    margin-right: 0.1px; 
+}
+.nav-link{
+    font-family: 'ArialRounded', sans-serif;
+}
+
+@media (max-width: 766px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%; /* Posiciona el menú desplegable debajo del navbar */
+        left: 0;
+        width: 100%;
+        background-color: #f8f9fa; /* Ajusta el color de fondo según sea necesario */
+        padding: 10px; /* Ajusta el espaciado interno según sea necesario */
+        border-radius: 5px; /* Ajusta el radio de borde según sea necesario */
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra según sea necesario */
+        z-index: 1000; 
+    }
+
+    .navbar-brand, .linkAreaNav {
+        margin-top: 10px; /* Ajusta según sea necesario */
+    }
+}
+
+@media(min-width: 1024px){
+    .navBarOrg{
+        height: 12vh;
+    }
+    .linkAreaNav{
+        display: none;
+    }
+    .navbar-nav{
+        margin-left: auto;
+        margin-top: 1rem;
+    }
+    .hvr-fade {
+        font-family: 'ArialRounded', sans-serif;
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -17,34 +74,10 @@
     transition-duration: 0.3s;
     -webkit-transition-property: color, background-color;
     transition-property: color, background-color;
-  }
-  .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-    background-color: #269989;
+    }
+    .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+    background-color: rgba(190, 163, 122, 0.4);
     color: white;
-  }
-  
-  
-.icon{
-    width: 7rem;
-    }
-@media (min-width: 768px) {
-    .icon{
-        width: 6rem;
-        }
-}
-
-@media (min-width: 1024px) {
-    .gral{
-        max-width: 100%;
-        width: 100vw;
-        height: 15vh;
-        flex-direction: row;
-    }
-    .icon{
-    width: 10rem;
-    margin-bottom: 3.2rem;
-    }
-    .navLinkOrder{
-        margin-top: 3.4rem;
+    border-radius: 0.5rem;
     }
 }

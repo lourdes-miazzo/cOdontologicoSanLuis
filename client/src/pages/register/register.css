@@ -11,7 +11,7 @@
     max-width: 100%;
     width: 100vw;
     background-color: #269989;
-    min-height: 86.2vh;
+    min-height: 90vh;
 }
 
 .backColor8.hasErrors{
@@ -22,7 +22,7 @@
 .formOrg8{
     background-color: #279081;
     height: 65vh;
-    width: 22vw;
+    width: 84vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +80,7 @@ input{
 @media (min-width: 768px){
 
     .backColor8{
-        height: 85vh;
+        height: 89vh;
         max-width: 100%;
         width: 100vw;
     }
@@ -90,7 +90,7 @@ input{
     
     .formOrg8{
         height: 55vh;
-        width: 22vw;
+        width: 40vw;
         padding: 3rem;
         margin-top: 6rem;
     }
@@ -114,10 +114,15 @@ input{
   
 }  /* CIERRE MEDIA QUERIE 768 NO BORRAR!   */
 @media (min-width: 1024px){
+    .backColor8{
+        height: 90vh;
+        max-width: 100%;
+        width: 100vw;
+    }
 
     .formOrg8{
         height: 55vh;
-        width: 22vw;
+        width: 35vw;
         padding: 3rem;
         margin-top: 3rem;
         

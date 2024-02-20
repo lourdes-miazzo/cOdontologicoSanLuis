@@ -1,17 +1,23 @@
+import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "./pages/home/Home.jsx"
 import Nosotros from "./pages/nosotros/Nosotros.jsx"
-import Noticias from "./pages/noticias/Noticias.jsx"
-import Cursos from "./pages/cursos/Cursos.jsx"
-import Contacto from "./pages/contacto/Contacto.jsx"
+import Proveeduria from './pages/proveeduria/Proveeduria.jsx';
+import Comision from './pages/comision/Comision.jsx';
 import Error404 from "./pages/error/Error404.jsx"
-import Register from './pages/register/Register.jsx';
-import Login from './pages/login/Login.jsx';
-import './App.css';
 
 import { AuthProvider } from './context/AuthContext.jsx';
-import NewsDetail from './components/newsDetail/NewsDetail.jsx';
+import Capacitaciones from './pages/capacitacion/Capacitaciones.jsx';
+import Posgrado from './pages/posgrado/Posgrado.jsx';
+import Soofma from './pages/soofma/Soofma.jsx';
+import Cursos from './pages/cursos/Cursos.jsx';
+import Autogestion from './pages/autogestion/Autogestion.jsx';
 import NavBar from './components/navBar/NavBar.jsx';
+
+
+
+
+
 
 
 function App() {
@@ -19,16 +25,17 @@ function App() {
     <>
     <AuthProvider>
       <BrowserRouter>
-          <NavBar/>
+        <NavBar/>
         <Routes>
             <Route exact path="/" element={<Home/>}/> 
             <Route exact path="/api/nosotros" element={<Nosotros/>}/>
-            <Route exact path="/api/noticias" element={<Noticias/>}/>
-            <Route exact path="/api/noticias/:id" element={<NewsDetail/>}/>
-            <Route exact path="/api/cursos" element={<Cursos/>}/>
-            <Route exact path="/api/contacto" element={<Contacto/>}/>
-            <Route exact path="/api/register/registro" element={<Register/>}/>
-            <Route exact path="/api/register/login" element={<Login/>}/> 
+            <Route exact path="/api/proveeduria" element={<Proveeduria/>}/>
+            <Route exact path="/api/comision" element={<Comision/>}/>
+            <Route exact path="/api/capacitaciones" element={<Capacitaciones/>}/>
+            <Route exact path="/api/capacitaciones/posgrado" element={<Posgrado/>}/>
+            <Route exact path="/api/capacitaciones/soofma" element={<Soofma/>}/>
+            <Route exact path="/api/capacitaciones/cursos" element={<Cursos/>}/>
+            <Route exact path="/api/autogestion" element={<Autogestion/>}/>
             <Route path='/*' element={<Error404/>}/>
         </Routes>
       </BrowserRouter> 

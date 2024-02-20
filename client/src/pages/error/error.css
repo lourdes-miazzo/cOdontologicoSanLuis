@@ -1,20 +1,40 @@
 .backColor3{
-    background-color: #269989;
-    height: 85vh;
+    background-color: rgb(226, 206, 179);
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
+.aroundError{
+    background-color: #e7eaee;
+    padding: 4rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+}
 .buttonError{
-    padding: 0.8rem;
+    background-color: rgb(226, 206, 179);
+    border: none;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    display: block; /* Para que el ancho se aplique correctamente */
+    width: 90%; /* Establecer el ancho al 100% */
+    text-align: center; /* Centrar el texto dentro del enlace */
+    margin-bottom: 1rem; 
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: "ArialRounded", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (min-width: 768px){
 
     .backColor3{
-        height: 85vh;
+        height: 89vh;
     }
     
     .buttonError{
@@ -26,7 +46,7 @@
 @media (min-width: 1024px){
 
     .backColor3{
-        height: 85vh;
+        height: 90vh;
     }
     
     .buttonError{

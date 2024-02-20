@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'ArialRounded';
+    font-weight: bold;
+    src: url("../../components/fonts/arlrdbd.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'MyriadPro';
+    src: url("../../components/fonts/myriadpro-light.otf") format('opentype');
+}
+
+.logoSoofma{
+    width: 6rem;
+    margin-top: 0.5rem;
+    z-index: top;
+}
+.logoSoo{
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.titleSoo{
+    text-align: center;
+    margin-top: 0.8rem;
+    font-family: "ArialRounded", sans-serif;
+}
+
+.backSoo{
+    background-image: linear-gradient(rgba(255,255,255, 0.4),rgba(255,255,255, 0.4)), url("https://firebasestorage.googleapis.com/v0/b/ecommerceart-fb0d5.appspot.com/o/recorte2fondo.jpg?alt=media&token=adf306e1-0c31-4f69-969d-abbc43a675b1");
+    max-width: 100%;
+    width: 100vw;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.aroundSoo{
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-image: linear-gradient(rgba(134,113,147,0.2), rgba(134,113,147,0.2));
+    width: 88vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.orgSoo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.indTextSoo{
+    margin-bottom: 0.1rem;
+    color: rgb(48,48,48);
+    font-size: 1rem;
+    font-family: "MyriadPro", sans-serif;
+}
+@media(min-width: 360px){
+ 
+    .logoSoofma{
+        width: 8rem;
+        margin-top: 1rem;
+    }
+    
+
+    .aroundSoo{
+        width: 88vw;
+
+    }
+}
+
+@media(min-width: 375px){
+    .titleSoo{
+        font-size: 1.3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .logoSoofma{
+        width: 8rem;
+    }
+ 
+    .aroundSoo{
+        width: 88vw;
+
+    }
+}
+@media(min-width: 389px){
+
+
+    .aroundSoo{
+        width: 88vw;
+
+    }
+    .logoSoofma{
+        width: 8rem;
+    }
+}
+
+@media(min-width: 412px){
+
+
+    .aroundSoo{
+        width: 88vw;
+ 
+    }
+    .logoSoofma{
+        width: 8rem;
+    }
+}
+
+@media(min-width: 520px){
+
+    .aroundSoo{
+        width: 88vw;
+
+    }
+    .logoSoofma{
+        width: 8rem;
+
+    }
+}
+
+@media(min-width: 767px){
+
+
+    .aroundSoo{
+        width: 80vw;
+
+    }
+    .logoSoofma{
+        width: 10rem;
+
+        margin-bottom: 1.5;
+    }
+}
+
+@media(min-width: 819px){
+
+    .backSoo{
+        min-height: 80vh;
+    }
+    .aroundSoo{
+        width: 80vw;
+    }
+    .logoSoofma{
+        width: 10rem;
+
+        margin-bottom: 1.5;
+    }
+}
+
+@media(min-width: 912px){
+    .titleSoo{
+        font-size: 1.6rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .backSoo{
+        min-height: 65vh;
+    }
+    .aroundSoo{
+        width: 80vw;
+        padding: 2rem;
+    }
+    .logoSoofma{
+        width: 10rem;
+ 
+        margin-bottom: 1.5;
+    }
+}
+
+@media(min-width: 1024px){
+    .titleSoo{
+        font-size: 1.6rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .backSooBig{
+        background-image: linear-gradient(rgba(255,255,255, 0.4),rgba(255,255,255, 0.4)), url("https://firebasestorage.googleapis.com/v0/b/ecommerceart-fb0d5.appspot.com/o/paciente-sexo-femenino-que-tiene-procedimiento-realizado-dentista.jpg?alt=media&token=208b83aa-ded3-4393-b0d1-0914e35a74b0");
+        background-size: cover;
+        max-width: 100%;
+        width: 100vw;
+        min-height: 88vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .aroundSoo{
+        width: 75vw;
+
+        padding: 2rem;
+    }
+    .logoSoofma{
+        width: 11rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}
+@media(min-width: 1280px){
+    .titleSoo{
+        font-size: 1.7rem;
+    }
+
+    .aroundSoo{
+        width: 60vw;
+        padding: 3rem;
+    }
+    .logoSoofma{
+        width: 13rem;
+    }
+    .indTextSoo{
+        font-size: 1.1rem;
+    }
+}

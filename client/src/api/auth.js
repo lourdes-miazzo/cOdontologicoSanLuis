@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API = "http://localhost:8080/api"
+const API = "http://localhost:8081/api"
 
 export const contactRequest = async (contact) => {
     try {
@@ -24,6 +24,15 @@ export const loginRequest = async(login) => {
     }
    }
 
+export const getInfoUser = async(storedToken) =>{
+    try{
+        const response=  await axios.get(`${API}/register/infoToken/${storedToken}`)
+        return response.data
+    }
+    catch(e){
+        throw e
+    }
+}
 
 export const logoutRequest =  (logout) => axios.post(`${API}/register/logout`, logout);
 

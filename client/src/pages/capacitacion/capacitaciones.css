@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'ArialRounded';
+    font-weight: bold;
+    src: url("../../components/fonts/arlrdbd.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'MyriadPro';
+    src: url("../../components/fonts/myriadpro-light.otf") format('opentype');
+}
+.titleStudies{
+    text-align: center;
+    margin-top: 0.8rem;
+    font-family: "ArialRounded", sans-serif;
+}
+.logoIndStudies{
+    width: 2rem;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.logosStudies{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+.backStudies{
+    background-image: linear-gradient(rgba(255,255,255, 0.4),rgba(255,255,255, 0.4)), url("https://firebasestorage.googleapis.com/v0/b/ecommerceart-fb0d5.appspot.com/o/recorte2fondo.jpg?alt=media&token=adf306e1-0c31-4f69-969d-abbc43a675b1");
+    max-width: 100%;
+    width: 100vw;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.aroundStudies{
+    border-radius: 1rem;
+    padding: 1rem;
+    background-image: linear-gradient(rgba(205,174,127,0.4), rgba(205,174,127,0.4));
+    width: 88vw;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.areaLink{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 78vw;
+    
+}
+.linkStudies{
+    background-color: #e7eaee;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    display: block; /* Para que el ancho se aplique correctamente */
+    width: 100%; /* Establecer el ancho al 100% */
+    text-align: center; /* Centrar el texto dentro del enlace */
+    margin-bottom: 1rem; 
+    font-size: 0.7rem;
+    font-family: "ArialRounded", sans-serif;
+}
+
+@media (min-width: 389px){
+    .backStudies{
+        height: 78vh;
+    }
+    .aroundStudies{
+        height: 38vh;
+      
+    }
+    
+.titleStudies{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.logosStudies{
+
+    margin-top: 2rem;
+}
+    
+}  /* CIERRE MEDIA QUERIE 389px NO BORRAR!   */
+
+
+
+@media (min-width: 412px){
+    .backStudies{
+        height: 88vh;
+    }
+    .aroundStudies{
+        height: 38vh;
+      
+    }
+    
+.titleStudies{
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.logosStudies{
+
+    margin-top: 2rem;
+}
+    
+}  /* CIERRE MEDIA QUERIE 414px NO BORRAR!   */
+
+@media (min-width: 540px){
+    .backStudies{
+        height: 87vh;
+        max-width: 100%;
+        width: 100vw;
+    }
+    .aroundStudies{
+        height: 50vh;
+        width: 65vw;
+        padding: 2rem;
+    }
+    
+.titleStudies{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.logosStudies{
+    margin-top: 4rem;
+}
+.linkStudies{
+    width: 70%; 
+    text-align: center; 
+    margin-bottom: 1rem; 
+    font-size: 1rem;
+    
+}
+}
+@media (min-width: 768px){
+    .backStudies{
+        height: 88vh;
+        max-width: 100%;
+        width: 100vw;
+    }
+    .aroundStudies{
+        height: 40vh;
+        width: 65vw;
+        padding: 2rem;
+    }
+    
+.titleStudies{
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.logosStudies{
+    margin-top: 4rem;
+}
+.linkStudies{
+    width: 70%; 
+    text-align: center; 
+    margin-bottom: 1rem; 
+    font-size: 1rem;
+    
+}
+.logoIndStudies{
+    width: 3rem;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+}  /* CIERRE MEDIA QUERIE 768 NO BORRAR!   */
+
+@media (min-width: 820px){
+    .backStudies{
+        width: 100vw;
+        max-width: 100%;
+    }
+    .aroundStudies{
+        height: 37vh;
+        width: 65vw;
+        padding: 2rem;
+    }
+}  /* CIERRE MEDIA QUERIE 820 NO BORRAR!   */
+
+@media (min-width: 912px){
+    .backStudies{
+        width: 100vw;
+        max-width: 100%;
+        height: 90vh;
+    }
+    .aroundStudies{
+        height: 30vh;
+        width: 65vw;
+        padding: 2rem;
+        margin-top: 4rem;
+    }
+    .titleStudies{
+        margin-top: 5rem;
+        font-size: 2rem;
+    }
+}  /* CIERRE MEDIA QUERIE 912 NO BORRAR!   */
+@media (min-width: 1024px){
+    .backStudiesBig{
+        background-image: linear-gradient(rgba(255,255,255, 0.4),rgba(255,255,255, 0.4)), url("https://firebasestorage.googleapis.com/v0/b/ecommerceart-fb0d5.appspot.com/o/paciente-sexo-femenino-que-tiene-procedimiento-realizado-dentista.jpg?alt=media&token=208b83aa-ded3-4393-b0d1-0914e35a74b0");
+        background-size: cover;
+        max-width: 100%;
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .aroundStudies{
+        height: 45vh;
+        width: 40vw;
+        padding: 2rem;
+
+    }
+    .titleStudies{
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .linkStudies{
+        padding: 1rem;
+        width: 43%;
+
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+    .areaLink{
+        margin-top: 0.5rem;
+
+
+    }
+    .logoIndStudies{
+        width: 2.5rem;
+    }
+    .logosStudies{
+        margin-top: 1rem;
+    }
+}  /* CIERRE MEDIA QUERIE 1024 NO BORRAR!   */
+
+@media (min-width: 1279px){
+    .backStudiesBig{
+        max-width: 100%;
+        width: 100vw;
+        height: 90vh;
+    }
+    .aroundStudies{
+        height: 37vh;
+        width: 37vw;
+        padding: 2rem;
+
+    }
+    .titleStudies{
+        margin-top: 2.8rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .linkStudies{
+        padding: 1rem;
+        width: 40%;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+
+    .logoIndStudies{
+        width: 2.5rem;
+    }
+    .logosStudies{
+        margin-top: 1.9rem;
+    }
+}  /* CIERRE MEDIA QUERIE 1279 NO BORRAR!   */
+
+@media (min-width: 1360px){
+    .backStudiesBig{
+        max-width: 100%;
+        width: 100vw;
+        height: 90vh;
+    }
+    .aroundStudies{
+        height: 42vh;
+        width: 32vw;
+      
+
+    }
+    .titleStudies{
+        margin-top: 2.8rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .linkStudies{
+        padding: 1rem;
+        width: 35%;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    .logoIndStudies{
+        width: 2.5rem;
+    }
+    .logosStudies{
+        margin-top: 1.9rem;
+    }
+}
